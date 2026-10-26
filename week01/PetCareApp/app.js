@@ -103,7 +103,7 @@ app.post('/signup', upload.single('pet_image'), (req, res) => {
 
 
 // Login Page
-app.get('/login', (req, res) => {x
+app.get('/login', (req, res) => {
   res.render('login', { messages: req.flash('success'), 
         errors: req.flash('error'), session: req.session });
 });
